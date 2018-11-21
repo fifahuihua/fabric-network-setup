@@ -14,26 +14,28 @@ A demo to setup hyperledger fabric network with mulitple machines/servers.
 * There orderer is in host 1.
 
 And You have pulled following docker images:
-REPOSITORY                     TAG                 IMAGE ID            CREATED             SIZE
-hyperledger/fabric-javaenv     1.3.0               2476cefaf833        5 weeks ago         1.7GB
-hyperledger/fabric-javaenv     latest              2476cefaf833        5 weeks ago         1.7GB
-hyperledger/fabric-ca          1.3.0               5c6b20ba944f        5 weeks ago         244MB
-hyperledger/fabric-ca          latest              5c6b20ba944f        5 weeks ago         244MB
-hyperledger/fabric-tools       1.3.0               c056cd9890e7        5 weeks ago         1.5GB
-hyperledger/fabric-tools       latest              c056cd9890e7        5 weeks ago         1.5GB
-hyperledger/fabric-ccenv       1.3.0               953124d80237        5 weeks ago         1.38GB
-hyperledger/fabric-ccenv       latest              953124d80237        5 weeks ago         1.38GB
-hyperledger/fabric-orderer     1.3.0               f430f581b46b        5 weeks ago         145MB
-hyperledger/fabric-orderer     latest              f430f581b46b        5 weeks ago         145MB
-hyperledger/fabric-peer        1.3.0               f3ea63abddaa        5 weeks ago         151MB
-hyperledger/fabric-peer        latest              f3ea63abddaa        5 weeks ago         151MB
-hyperledger/fabric-zookeeper   0.4.13              e62e0af39193        6 weeks ago         1.39GB
-hyperledger/fabric-zookeeper   latest              e62e0af39193        6 weeks ago         1.39GB
-hyperledger/fabric-kafka       0.4.13              4121ea662c47        6 weeks ago         1.4GB
-hyperledger/fabric-kafka       latest              4121ea662c47        6 weeks ago         1.4GB
-hyperledger/fabric-couchdb     0.4.13              1d3266e01e64        6 weeks ago         1.45GB
-hyperledger/fabric-couchdb     latest              1d3266e01e64        6 weeks ago         1.45GB
-hyperledger/fabric-baseos      amd64-0.4.13        f0fe49196c40        6 weeks ago         124MB
+
+| REPOSITORY                    | TAG                | IMAGE ID             | CREATED              | SIZE | 
+|-------------------------------|--------------------|----------------------|----------------------|-------|
+| hyperledger/fabric-javaenv    | 1.3.0              | 2476cefaf833         | 5 weeks ago          | 1.7GB | 
+| hyperledger/fabric-javaenv    | latest             | 2476cefaf833         | 5 weeks ago          | 1.7GB | 
+| hyperledger/fabric-ca         | 1.3.0              | 5c6b20ba944f         | 5 weeks ago          | 244MB | 
+| hyperledger/fabric-ca         | latest             | 5c6b20ba944f         | 5 weeks ago          | 244MB | 
+| hyperledger/fabric-tools      | 1.3.0              | c056cd9890e7         | 5 weeks ago          | 1.5GB | 
+| hyperledger/fabric-tools      | latest             | c056cd9890e7         | 5 weeks ago          | 1.5GB | 
+| hyperledger/fabric-ccenv      | 1.3.0              | 953124d80237         | 5 weeks ago          | 1.38GB | 
+| hyperledger/fabric-ccenv      | latest             | 953124d80237         | 5 weeks ago          | 1.38GB | 
+| hyperledger/fabric-orderer    | 1.3.0              | f430f581b46b         | 5 weeks ago          | 145MB | 
+| hyperledger/fabric-orderer    | latest             | f430f581b46b         | 5 weeks ago          | 145MB | 
+| hyperledger/fabric-peer       | 1.3.0              | f3ea63abddaa         | 5 weeks ago          | 151MB | 
+| hyperledger/fabric-peer       | latest             | f3ea63abddaa         | 5 weeks ago          | 151MB | 
+| hyperledger/fabric-zookeeper  | 0.4.13             | e62e0af39193         | 6 weeks ago          | 1.39GB | 
+| hyperledger/fabric-zookeeper  | latest             | e62e0af39193         | 6 weeks ago          | 1.39GB | 
+| hyperledger/fabric-kafka      | 0.4.13             | 4121ea662c47         | 6 weeks ago          | 1.4GB | 
+| hyperledger/fabric-kafka      | latest             | 4121ea662c47         | 6 weeks ago          | 1.4GB | 
+| hyperledger/fabric-couchdb    | 0.4.13             | 1d3266e01e64         | 6 weeks ago          | 1.45GB | 
+| hyperledger/fabric-couchdb    | latest             | 1d3266e01e64         | 6 weeks ago          | 1.45GB | 
+| hyperledger/fabric-baseos     | amd64-0.4.13       | f0fe49196c40         | 6 weeks ago          | 124MB | 
 
 **Please replace the IP address in the docker-compose-org1.yaml and docker-compose-org1.yaml with the IP addresses of your hosts.**
 
