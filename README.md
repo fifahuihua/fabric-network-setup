@@ -1,5 +1,5 @@
 # fabric-network-setup
-A demo to setup hyperledger fabric with mulitple machines/servers.
+A demo to setup hyperledger fabric network with mulitple machines/servers.
 
 # Assumption
 * IP address of host 1: 146.222.94.74
@@ -9,11 +9,11 @@ A demo to setup hyperledger fabric with mulitple machines/servers.
 
 (Please replace the IP address in the docker-compose-org1.yaml and docker-compose-org1.yaml with the IP addresses of your hosts.)
 
-# commands
+# Commands
 1. git clone https://github.com/fifahuihua/fabric-network-setup.git
 2. cd fabric-network-setup
 3. ./byfn.sh down 
-4. docker image rm dev-*
+4. docker image rm $(docker image ls -q dev-*)
 5. ./byfn.sh generate
 6. scp -r ./crypto-config antony@146.222.94.31:/home/antony/projects/fabric-network-setup
 7. docker-compose -f docker-compose-org1.yaml up -d
