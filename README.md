@@ -6,6 +6,7 @@ A demo to setup hyperledger fabric with mulitple machines/servers.
 * IP address of host 2: 146.222.94.31
 * There are 2 peers in org1, and 2 peers in org2.
 * There orderer is in host 1.
+
 (Please replace the IP address in the docker-compose-org1.yaml and docker-compose-org1.yaml with the IP addresses of your hosts.)
 
 # commands
