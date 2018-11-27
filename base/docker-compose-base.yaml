@@ -32,11 +32,11 @@ services:
     ports:
       - 7050:7050
     extra_hosts:  
-      - "orderer.example.com:146.222.94.74"
-      # - "peer0.org1.example.com:146.222.94.74"
-      # - "peer1.org1.example.com:146.222.94.74"
-      - "peer0.org2.example.com:146.222.94.31"
-      - "peer1.org2.example.com:146.222.94.31"
+      - "orderer.example.com:10.222.48.146"
+      # - "peer0.org1.example.com:10.222.48.146"
+      # - "peer1.org1.example.com:10.222.48.146"
+      - "peer0.org2.example.com:10.222.48.162"
+      - "peer1.org2.example.com:10.222.48.162"
 
   peer0.org1.example.com:
     container_name: peer0.org1.example.com
@@ -58,9 +58,9 @@ services:
       - 7051:7051
       - 7053:7053
     extra_hosts:  
-      - "orderer.example.com:146.222.94.74"
-      # - "peer0.org1.example.com:146.222.94.74"
-      # - "peer1.org1.example.com:146.222.94.74"
+      - "orderer.example.com:10.222.48.146"
+      # - "peer0.org1.example.com:10.222.48.146"
+      # - "peer1.org1.example.com:10.222.48.146"
       - "peer0.org2.example.com:10.222.48.162"
       - "peer1.org2.example.com:10.222.48.162"
 
@@ -85,9 +85,9 @@ services:
       - 8051:7051
       - 8053:7053
     extra_hosts:  
-      - "orderer.example.com:146.222.94.74"
-      # - "peer0.org1.example.com:146.222.94.74"
-      # - "peer1.org1.example.com:146.222.94.74"
+      - "orderer.example.com:10.222.48.146"
+      # - "peer0.org1.example.com:10.222.48.146"
+      # - "peer1.org1.example.com:10.222.48.146"
       - "peer0.org2.example.com:10.222.48.162"
       - "peer1.org2.example.com:10.222.48.162"
 
@@ -114,8 +114,8 @@ services:
       - "orderer.example.com:10.222.48.146"
       - "peer0.org1.example.10.222.48.146"
       - "peer1.org1.example.com:10.222.48.146"
-      # - "peer0.org2.example.com:146.222.94.31"
-      # - "peer1.org2.example.com:146.222.94.31"
+      # - "peer0.org2.example.com:10.222.48.162"
+      # - "peer1.org2.example.com:10.222.48.162"
 
   peer1.org2.example.com:
     container_name: peer1.org2.example.com
@@ -140,5 +140,5 @@ services:
       - "orderer.example.com:10.222.48.146"
       - "peer0.org1.example.com:10.222.48.146"
       - "peer1.org1.example.com:10.222.48.146"
-      # - "peer0.org2.example.com:146.222.94.31"
-      # - "peer1.org2.example.com:146.222.94.31"
+      # - "peer0.org2.example.com:10.222.48.162"
+      # - "peer1.org2.example.com:10.222.48.162"

@@ -8,8 +8,8 @@ A demo to setup hyperledger fabric network with mulitple machines/servers.
 * Installed git
 * Installed python (Only Support 2.7.*)
 * Installed Node.js (version >= 8.9.0)
-* IP address of host 1: 146.222.94.74
-* IP address of host 2: 146.222.94.31
+* IP address of host 1: 10.222.48.146
+* IP address of host 2: 10.222.48.162
 * There are 2 peers in org1, and 2 peers in org2.
 * There orderer is in host 1.
 
@@ -45,7 +45,7 @@ And You have pulled following docker images:
 3. ./byfn.sh down 
 4. docker image rm $(docker image ls -q dev-*)
 5. ./byfn.sh generate
-6. scp -r ./crypto-config antony@146.222.94.31:/home/antony/projects/fabric-network-setup
+6. scp -r ./crypto-config antony@10.222.48.162:/home/antony/projects/fabric-network-setup
 7. docker-compose -f docker-compose-org1.yaml up -d
 8. docker exec -it cli bash
 9. export CHANNEL_NAME=mychannel 
