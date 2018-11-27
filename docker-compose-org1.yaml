@@ -72,8 +72,8 @@ services:
     networks:
       - byfn
     extra_hosts:  
-      - "orderer.example.com:146.222.94.74"
-      - "peer0.org1.example.com:146.222.94.74"
-      - "peer1.org1.example.com:146.222.94.74"
-      - "peer0.org2.example.com:146.222.94.31"
-      - "peer1.org2.example.com:146.222.94.31"      
+      - "orderer.example.com:10.222.48.146"
+      - "peer0.org1.example.com:10.222.48.146"
+      - "peer1.org1.example.com:10.222.48.146"
+      - "peer0.org2.example.com:10.222.48.162"
+      - "peer1.org2.example.com:10.222.48.162"      
